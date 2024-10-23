@@ -1,0 +1,62 @@
+body{
+
+    background-image: url('./ulm-alumniphoto.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header_bg {
+    background: #862633;
+    height: 130px;
+    min-height: 110px;
+    min-width: 1000px;
+    width: 100%;
+}
+
+.header {
+    height: 73px;
+    margin: 0 auto;
+    padding: 7px 0 0 0;
+    width: 1000px;
+}
+
+.header_bg #logo-mark {
+    margin: -2px 0 0 441px;
+    height: 118px;
+}
+
+.alumni {
+    background-color: gold;
+    height: 30px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+a:link{
+    color: white;
+}
+
+.alpha{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2ch;
+    
+}
+
+.search{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2ch;
+}
+
+div.transbox {
+        margin-left: 500px;
+        margin-right: 500px;
+        background-color: #ffffff;
+        border: 1px solid black;
+        opacity: 0.6;
+
+}

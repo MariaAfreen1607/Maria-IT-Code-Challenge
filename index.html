@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="University of Louisiana Monroe Alumni Directory">
+  <title>ULM Alumni Directory</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header_bg">
+    <div class="header">
+      <img id="logo-mark" src="graphics/ulm-academic-logo-circle.png" alt="ULM logo">
+    </div>
+  </div>
+
+  <div class="alumni">
+    <h3>Alumni Search Directory</h3>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>ULM <span>Alumni</span> Directory</h2>
+    <p>The directory spans all of the University of Louisiana Monroe and is available exclusively to alumni, faculty, and students. Stay connected, exchange career advice, and reconnect with your classmates.</p>
+  </section>
+
+  <!-- LOGIN -->
+  <div class="login-panel">
+    <h3>ULM Account Login</h3>
+    <form id="loginForm" novalidate>
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Enter your username" autocomplete="username">
+        <div class="error-msg" id="usernameError"></div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password">
+        <div class="error-msg" id="passwordError"></div>
+      </div>
+      <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+    <div class="login-help">
+      <a href="#">Need help?</a>
+    </div>
+  </div>
+
+  <!-- DIRECTORY -->
+  <div class="directory-section">
+
+    <!-- SEARCH BAR -->
+    <div class="search-bar-wrapper">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" class="search-bar" id="alumniSearch" placeholder="Search alumni by name or profession…">
+      <div class="search-count" id="searchCount"></div>
+    </div>
+
+    <!-- TAB TOGGLE -->
+    <div class="tab-toggle">
+      <button class="active" data-view="names">By Name</button>
+      <button data-view="professions">By Profession</button>
+    </div>
+
+    <!-- ===== BY NAME ===== -->
+
+    <div class="letter-group">
+      <h2 class="letter-heading">A</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="amelia turner" data-profession="lawyer">
+          <a href="profiles/amelia.html">
+            <div class="alumni-avatar">AT</div>
+            <div>Amelia Turner<span class="alumni-profession">Lawyer</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="ava harris" data-profession="designer">
+          <a href="profiles/ava.html">
+            <div class="alumni-avatar">AH</div>
+            <div>Ava Harris<span class="alumni-profession">Designer</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">B</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="benjamin jenkins" data-profession="real estate agent">
+          <a href="profiles/benjamin.html">
+            <div class="alumni-avatar">BJ</div>
+            <div>Benjamin Jenkins<span class="alumni-profession">Real Estate Agent</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">C</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="charlotte roberts" data-profession="event manager">
+          <a href="profiles/charlottle.html">
+            <div class="alumni-avatar">CR</div>
+            <div>Charlotte Roberts<span class="alumni-profession">Event Manager</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="chloe martinez" data-profession="web developer">
+          <a href="profiles/chloe.html">
+            <div class="alumni-avatar">CM</div>
+            <div>Chloe Martinez<span class="alumni-profession">Web Developer</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">D</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="danial lee" data-profession="data analyst">
+          <a href="#">
+            <div class="alumni-avatar">DL</div>
+            <div>Danial Lee<span class="alumni-profession">Data Analyst</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">E</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="ella campbell" data-profession="public relations">
+          <a href="profiles/ellacamp.html">
+            <div class="alumni-avatar">EC</div>
+            <div>Ella Campbell<span class="alumni-profession">Public Relations</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="ella scott" data-profession="designer">
+          <a href="profiles/ellasc.html">
+            <div class="alumni-avatar">ES</div>
+            <div>Ella Scott<span class="alumni-profession">Designer</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="emily clark" data-profession="hr manager">
+          <a href="profiles/emily.html">
+            <div class="alumni-avatar">EC</div>
+            <div>Emily Clark<span class="alumni-profession">HR Manager</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="ethan garcia" data-profession="event manager">
+          <a href="profiles/ethan.html">
+            <div class="alumni-avatar">EG</div>
+            <div>Ethan Garcia<span class="alumni-profession">Event Manager</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">G</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="grace thompson" data-profession="legal advisor">
+          <a href="#">
+            <div class="alumni-avatar">GT</div>
+            <div>Grace Thompson<span class="alumni-profession">Legal Advisor</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">H</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="harper bell" data-profession="fitness trainer">
+          <a href="profiles/harper.html">
+            <div class="alumni-avatar">HB</div>
+            <div>Harper Bell<span class="alumni-profession">Fitness Trainer</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="henry murphy" data-profession="accountant">
+          <a href="profiles/henry.html">
+            <div class="alumni-avatar">HM</div>
+            <div>Henry Murphy<span class="alumni-profession">Accountant</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">J</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="jack adams" data-profession="health coach">
+          <a href="profiles/jack.html">
+            <div class="alumni-avatar">JA</div>
+            <div>Jack Adams<span class="alumni-profession">Health Coach</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="james cox" data-profession="business consultant">
+          <a href="profiles/james.html">
+            <div class="alumni-avatar">JC</div>
+            <div>James Cox<span class="alumni-profession">Business Consultant</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="jane smith" data-profession="marketing">
+          <a href="#">
+            <div class="alumni-avatar">JS</div>
+            <div>Jane Smith<span class="alumni-profession">Marketing</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="john doe" data-profession="software engineer">
+          <a href="profiles/john.html">
+            <div class="alumni-avatar">JD</div>
+            <div>John Doe<span class="alumni-profession">Software Engineer</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">L</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="liam cooper" data-profession="logistics">
+          <a href="profiles/liam.html">
+            <div class="alumni-avatar">LC</div>
+            <div>Liam Cooper<span class="alumni-profession">Logistics</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="lily sanders" data-profession="marketing">
+          <a href="profiles/lily.html">
+            <div class="alumni-avatar">LS</div>
+            <div>Lily Sanders<span class="alumni-profession">Marketing</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="logan parker" data-profession="sales manager">
+          <a href="profiles/logan.html">
+            <div class="alumni-avatar">LP</div>
+            <div>Logan Parker<span class="alumni-profession">Sales Manager</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="lucas perez" data-profession="technology">
+          <a href="#">
+            <div class="alumni-avatar">LP</div>
+            <div>Lucas Perez<span class="alumni-profession">Technology</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">M</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="mason miller" data-profession="media">
+          <a href="profiles/mason.html">
+            <div class="alumni-avatar">MM</div>
+            <div>Mason Miller<span class="alumni-profession">Media</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="mia gonzalez" data-profession="marketing">
+          <a href="profiles/mia.html">
+            <div class="alumni-avatar">MG</div>
+            <div>Mia Gonzalez<span class="alumni-profession">Marketing</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="mike brown" data-profession="architect">
+          <a href="profiles/mike.html">
+            <div class="alumni-avatar">MB</div>
+            <div>Mike Brown<span class="alumni-profession">Architect</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">O</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="oliver white" data-profession="financial advisor">
+          <a href="profiles/oliver.html">
+            <div class="alumni-avatar">OW</div>
+            <div>Oliver White<span class="alumni-profession">Financial Advisor</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="olivia martinez" data-profession="media">
+          <a href="profiles/olivia.html">
+            <div class="alumni-avatar">OM</div>
+            <div>Olivia Martinez<span class="alumni-profession">Media</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">R</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="robert davis" data-profession="technology">
+          <a href="profiles/robert.html">
+            <div class="alumni-avatar">RD</div>
+            <div>Robert Davis<span class="alumni-profession">Technology</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">S</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="sarah wilson" data-profession="business consultant">
+          <a href="profiles/sarah.html">
+            <div class="alumni-avatar">SW</div>
+            <div>Sarah Wilson<span class="alumni-profession">Business Consultant</span></div>
+          </a>
+        </li>
+        <li class="alumni-card" data-name="sophia bailey" data-profession="business consultant">
+          <a href="profiles/sophia.html">
+            <div class="alumni-avatar">SB</div>
+            <div>Sophia Bailey<span class="alumni-profession">Business Consultant</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="letter-group">
+      <h2 class="letter-heading">W</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="william nelson" data-profession="cybersecurity analyst">
+          <a href="profiles/william.html">
+            <div class="alumni-avatar">WN</div>
+            <div>William Nelson<span class="alumni-profession">Cybersecurity Analyst</span></div>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ===== BY PROFESSION ===== -->
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Accountant</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="henry murphy" data-profession="accountant">
+          <a href="profiles/henry.html"><div class="alumni-avatar">HM</div><div>Henry Murphy</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Architect</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="mike brown" data-profession="architect">
+          <a href="profiles/mike.html"><div class="alumni-avatar">MB</div><div>Mike Brown</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Business Consultant</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="james cox" data-profession="business consultant">
+          <a href="profiles/james.html"><div class="alumni-avatar">JC</div><div>James Cox</div></a>
+        </li>
+        <li class="alumni-card" data-name="sarah wilson" data-profession="business consultant">
+          <a href="profiles/sarah.html"><div class="alumni-avatar">SW</div><div>Sarah Wilson</div></a>
+        </li>
+        <li class="alumni-card" data-name="sophia bailey" data-profession="business consultant">
+          <a href="profiles/sophia.html"><div class="alumni-avatar">SB</div><div>Sophia Bailey</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Cybersecurity Analyst</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="william nelson" data-profession="cybersecurity analyst">
+          <a href="profiles/william.html"><div class="alumni-avatar">WN</div><div>William Nelson</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Data Analyst</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="danial lee" data-profession="data analyst">
+          <a href="#"><div class="alumni-avatar">DL</div><div>Danial Lee</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Designer</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="ava harris" data-profession="designer">
+          <a href="profiles/ava.html"><div class="alumni-avatar">AH</div><div>Ava Harris</div></a>
+        </li>
+        <li class="alumni-card" data-name="ella scott" data-profession="designer">
+          <a href="profiles/ellasc.html"><div class="alumni-avatar">ES</div><div>Ella Scott</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Event Manager</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="charlotte roberts" data-profession="event manager">
+          <a href="profiles/charlottle.html"><div class="alumni-avatar">CR</div><div>Charlotte Roberts</div></a>
+        </li>
+        <li class="alumni-card" data-name="ethan garcia" data-profession="event manager">
+          <a href="profiles/ethan.html"><div class="alumni-avatar">EG</div><div>Ethan Garcia</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Financial Advisor</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="oliver white" data-profession="financial advisor">
+          <a href="profiles/oliver.html"><div class="alumni-avatar">OW</div><div>Oliver White</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Fitness Trainer / Health Coach</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="harper bell" data-profession="fitness trainer">
+          <a href="profiles/harper.html"><div class="alumni-avatar">HB</div><div>Harper Bell</div></a>
+        </li>
+        <li class="alumni-card" data-name="jack adams" data-profession="health coach">
+          <a href="profiles/jack.html"><div class="alumni-avatar">JA</div><div>Jack Adams</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">HR Manager</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="emily clark" data-profession="hr manager">
+          <a href="profiles/emily.html"><div class="alumni-avatar">EC</div><div>Emily Clark</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Legal Advisor</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="amelia turner" data-profession="lawyer">
+          <a href="profiles/amelia.html"><div class="alumni-avatar">AT</div><div>Amelia Turner</div></a>
+        </li>
+        <li class="alumni-card" data-name="grace thompson" data-profession="legal advisor">
+          <a href="#"><div class="alumni-avatar">GT</div><div>Grace Thompson</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Logistics</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="liam cooper" data-profession="logistics">
+          <a href="profiles/liam.html"><div class="alumni-avatar">LC</div><div>Liam Cooper</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Marketing</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="lily sanders" data-profession="marketing">
+          <a href="profiles/lily.html"><div class="alumni-avatar">LS</div><div>Lily Sanders</div></a>
+        </li>
+        <li class="alumni-card" data-name="jane smith" data-profession="marketing">
+          <a href="#"><div class="alumni-avatar">JS</div><div>Jane Smith</div></a>
+        </li>
+        <li class="alumni-card" data-name="mia gonzalez" data-profession="marketing">
+          <a href="profiles/mia.html"><div class="alumni-avatar">MG</div><div>Mia Gonzalez</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Media</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="mason miller" data-profession="media">
+          <a href="profiles/mason.html"><div class="alumni-avatar">MM</div><div>Mason Miller</div></a>
+        </li>
+        <li class="alumni-card" data-name="olivia martinez" data-profession="media">
+          <a href="profiles/olivia.html"><div class="alumni-avatar">OM</div><div>Olivia Martinez</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Public Relations</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="ella campbell" data-profession="public relations">
+          <a href="profiles/ellacamp.html"><div class="alumni-avatar">EC</div><div>Ella Campbell</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Real Estate Agent</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="benjamin jenkins" data-profession="real estate agent">
+          <a href="profiles/benjamin.html"><div class="alumni-avatar">BJ</div><div>Benjamin Jenkins</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Sales Manager</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="logan parker" data-profession="sales manager">
+          <a href="profiles/logan.html"><div class="alumni-avatar">LP</div><div>Logan Parker</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Software Engineer / Technology</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="john doe" data-profession="software engineer">
+          <a href="profiles/john.html"><div class="alumni-avatar">JD</div><div>John Doe</div></a>
+        </li>
+        <li class="alumni-card" data-name="lucas perez" data-profession="technology">
+          <a href="#"><div class="alumni-avatar">LP</div><div>Lucas Perez</div></a>
+        </li>
+        <li class="alumni-card" data-name="robert davis" data-profession="technology">
+          <a href="profiles/robert.html"><div class="alumni-avatar">RD</div><div>Robert Davis</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="profession-group">
+      <h2 class="profession-heading">Web Developer</h2>
+      <ul class="alumni-list">
+        <li class="alumni-card" data-name="chloe martinez" data-profession="web developer">
+          <a href="profiles/chloe.html"><div class="alumni-avatar">CM</div><div>Chloe Martinez</div></a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="noResults">No alumni found matching your search.</div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <p>Can't find an alum? Want to be listed?</p>
+    <a href="#">Contact us</a>
+  </footer>
+
+  <!-- SCROLL TO TOP -->
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="main.js"></script>
+</body>
+</html>
